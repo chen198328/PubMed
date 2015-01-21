@@ -1,0 +1,29 @@
+﻿#Software: vstest.executionengine.x86
+#ProcessID: 4840
+#AppDomain: UnitTestAdapter: Running test
+#FileName: D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\TESTWINDOW\vstest.executionengine.x86.exe
+#BaseDirectory: D:\项目文档\PubMed\PubMedInput\UnitTest\bin\Debug
+#CommandLine: /parentProcessId 7256
+#ApplicationType: Console
+#CLR: 4.0.30319.18408
+#OS: Windows 8 x64, Chen198328/ROY-PC
+#Date: 2015-01-21
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+22:24:10.882 8 N - NewLife.Core v4.6.2014.0928 Build 2014-10-26 16:42:04
+22:24:10.919 8 N - NewLife.XCode v8.13.2014.0720 Build 2014-10-26 16:40:58
+22:24:10.920 8 N - 使用数据库方式：独占，加大缓存权重
+
+#Software: vstest.executionengine.x86
+#ProcessID: 8612
+#AppDomain: UnitTestAdapter: Running test
+#FileName: D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\TESTWINDOW\vstest.executionengine.x86.exe
+#BaseDirectory: D:\项目文档\PubMed\PubMedInput\UnitTest\bin\Debug
+#CommandLine: /parentProcessId 7256
+#ApplicationType: Console
+#CLR: 4.0.30319.18408
+#OS: Windows 8 x64, Chen198328/ROY-PC
+#Date: 2015-01-21
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+22:36:06.504 8 N - NewLife.Core v4.6.2014.0928 Build 2014-10-26 16:42:04
+22:36:06.523 8 N - NewLife.XCode v8.13.2014.0720 Build 2014-10-26 16:40:58
+22:36:06.524 8 N - 使用数据库方式：独占，加大缓存权重

@@ -1,0 +1,212 @@
+
+PMID- 24380387
+OWN - NLM
+STAT- MEDLINE
+DA  - 20140113
+DCOM- 20140623
+LR  - 20141111
+IS  - 1471-2407 (Electronic)
+IS  - 1471-2407 (Linking)
+VI  - 13
+DP  - 2013
+TI  - Berberine suppresses tumorigenicity and growth of nasopharyngeal carcinoma cells 
+      by inhibiting STAT3 activation induced by tumor associated fibroblasts.
+PG  - 619
+LID - 10.1186/1471-2407-13-619 [doi]
+AB  - BACKGROUND: Cortidis rhizoma (Huanglian) and its major therapeutic component,
+      berberine, have drawn extensive attention in recent years for their anti-cancer
+      properties. Growth inhibitory effects of berberine on multiple types of human
+      cancer cells have been reported. Berberine inhibits invasion, induces cell cycle 
+      arrest and apoptosis in human cancer cells. The anti-inflammatory property of
+      berberine, involving inhibition of Signal Transducer and Activator of
+      Transcription 3 (STAT3) activation, has also been documented. METHODS: In this
+      study, we have examined the effects of berberine on tumorigenicity and growth of 
+      nasopharyngeal carcinoma (NPC) cells and their relationship to STAT3 signaling
+      using both in vivo and in vitro models. RESULTS: Berberine effectively inhibited 
+      the tumorigenicity and growth of an EBV-positive NPC cell line (C666-1) in
+      athymic nude mice. Inhibition of tumorigenic growth of NPC cells in vivo was
+      correlated with effective inhibition of STAT3 activation in NPC cells inside the 
+      tumor xenografts grown in nude mice. In vitro, berberine inhibited both
+      constitutive and IL-6-induced STAT3 activation in NPC cells. Inhibition of STAT3 
+      activation by berberine induced growth inhibition and apoptotic response in NPC
+      cells. Tumor-associated fibroblasts were found to secret IL-6 and the conditioned
+      medium harvested from the fibroblasts also induced STAT3 activation in NPC cells.
+      Furthermore, STAT3 activation by conditioned medium of tumor-associated
+      fibroblasts could be blocked by berberine or antibodies against IL-6 and IL-6R.
+      CONCLUSIONS: Our observation that berberine effectively inhibited activation of
+      STAT3 induced by tumor-associated fibroblasts suggests a role of berberine in
+      modulating the effects of tumor stroma on the growth of NPC cells. The effective 
+      inhibition of STAT3 activation in NPC cells by berberine supports its potential
+      use in the treatment of NPC.
+FAU - Tsang, Chi Man
+AU  - Tsang CM
+FAU - Cheung, Yuk Chun
+AU  - Cheung YC
+FAU - Lui, Vivian Wai-Yan
+AU  - Lui VW
+FAU - Yip, Yim Ling
+AU  - Yip YL
+FAU - Zhang, Guitao
+AU  - Zhang G
+FAU - Lin, Victor Weitao
+AU  - Lin VW
+FAU - Cheung, Kenneth Chat-Pan
+AU  - Cheung KC
+FAU - Feng, Yibin
+AU  - Feng Y
+AD  - Department of Anatomy, The University of HongKong, HongKong, SAR, China.
+      yfeng@hku.hk.
+FAU - Tsao, Sai Wah
+AU  - Tsao SW
+LA  - eng
+GR  - 5P50 CA097007/CA/NCI NIH HHS/United States
+GR  - 5P50 CA097190-05/CA/NCI NIH HHS/United States
+PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
+PT  - Research Support, Non-U.S. Gov't
+DEP - 20131231
+PL  - England
+TA  - BMC Cancer
+JT  - BMC cancer
+JID - 100967800
+RN  - 0 (Antineoplastic Agents)
+RN  - 0 (Interleukin-6)
+RN  - 0 (STAT3 Transcription Factor)
+RN  - 0I8Y3P32UF (Berberine)
+RN  - Nasopharyngeal carcinoma
+SB  - IM
+MH  - Animals
+MH  - Antineoplastic Agents/pharmacology/toxicity
+MH  - Berberine/*pharmacology/toxicity
+MH  - Cell Line, Tumor
+MH  - Cell Proliferation/drug effects
+MH  - Cell Transformation, Neoplastic/*drug effects/*metabolism
+MH  - Disease Models, Animal
+MH  - Fibroblasts/drug effects/*metabolism
+MH  - Humans
+MH  - Interleukin-6/pharmacology
+MH  - Male
+MH  - Mice
+MH  - Nasopharyngeal Neoplasms/*metabolism/*pathology
+MH  - STAT3 Transcription Factor/antagonists & inhibitors/*metabolism
+MH  - Signal Transduction/drug effects
+MH  - Tumor Burden/drug effects
+MH  - Xenograft Model Antitumor Assays
+PMC - PMC3890551
+OID - NLM: PMC3890551
+EDAT- 2014/01/02 06:00
+MHDA- 2014/06/24 06:00
+CRDT- 2014/01/02 06:00
+PHST- 2013/04/24 [received]
+PHST- 2013/12/09 [accepted]
+PHST- 2013/12/31 [aheadofprint]
+AID - 1471-2407-13-619 [pii]
+AID - 10.1186/1471-2407-13-619 [doi]
+PST - epublish
+SO  - BMC Cancer. 2013 Dec 31;13:619. doi: 10.1186/1471-2407-13-619.
+
+PMID- 24380387
+OWN - NLM
+STAT- MEDLINE
+DA  - 20140113
+DCOM- 20140623
+LR  - 20141111
+IS  - 1471-2407 (Electronic)
+IS  - 1471-2407 (Linking)
+VI  - 13
+DP  - 2013
+TI  - Berberine suppresses tumorigenicity and growth of nasopharyngeal carcinoma cells 
+      by inhibiting STAT3 activation induced by tumor associated fibroblasts.
+PG  - 619
+LID - 10.1186/1471-2407-13-619 [doi]
+AB  - BACKGROUND: Cortidis rhizoma (Huanglian) and its major therapeutic component,
+      berberine, have drawn extensive attention in recent years for their anti-cancer
+      properties. Growth inhibitory effects of berberine on multiple types of human
+      cancer cells have been reported. Berberine inhibits invasion, induces cell cycle 
+      arrest and apoptosis in human cancer cells. The anti-inflammatory property of
+      berberine, involving inhibition of Signal Transducer and Activator of
+      Transcription 3 (STAT3) activation, has also been documented. METHODS: In this
+      study, we have examined the effects of berberine on tumorigenicity and growth of 
+      nasopharyngeal carcinoma (NPC) cells and their relationship to STAT3 signaling
+      using both in vivo and in vitro models. RESULTS: Berberine effectively inhibited 
+      the tumorigenicity and growth of an EBV-positive NPC cell line (C666-1) in
+      athymic nude mice. Inhibition of tumorigenic growth of NPC cells in vivo was
+      correlated with effective inhibition of STAT3 activation in NPC cells inside the 
+      tumor xenografts grown in nude mice. In vitro, berberine inhibited both
+      constitutive and IL-6-induced STAT3 activation in NPC cells. Inhibition of STAT3 
+      activation by berberine induced growth inhibition and apoptotic response in NPC
+      cells. Tumor-associated fibroblasts were found to secret IL-6 and the conditioned
+      medium harvested from the fibroblasts also induced STAT3 activation in NPC cells.
+      Furthermore, STAT3 activation by conditioned medium of tumor-associated
+      fibroblasts could be blocked by berberine or antibodies against IL-6 and IL-6R.
+      CONCLUSIONS: Our observation that berberine effectively inhibited activation of
+      STAT3 induced by tumor-associated fibroblasts suggests a role of berberine in
+      modulating the effects of tumor stroma on the growth of NPC cells. The effective 
+      inhibition of STAT3 activation in NPC cells by berberine supports its potential
+      use in the treatment of NPC.
+FAU - Tsang, Chi Man
+AU  - Tsang CM
+FAU - Cheung, Yuk Chun
+AU  - Cheung YC
+FAU - Lui, Vivian Wai-Yan
+AU  - Lui VW
+FAU - Yip, Yim Ling
+AU  - Yip YL
+FAU - Zhang, Guitao
+AU  - Zhang G
+FAU - Lin, Victor Weitao
+AU  - Lin VW
+FAU - Cheung, Kenneth Chat-Pan
+AU  - Cheung KC
+FAU - Feng, Yibin
+AU  - Feng Y
+AD  - Department of Anatomy, The University of HongKong, HongKong, SAR, China.
+      yfeng@hku.hk.
+FAU - Tsao, Sai Wah
+AU  - Tsao SW
+LA  - eng
+GR  - 5P50 CA097007/CA/NCI NIH HHS/United States
+GR  - 5P50 CA097190-05/CA/NCI NIH HHS/United States
+PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
+PT  - Research Support, Non-U.S. Gov't
+DEP - 20131231
+PL  - England
+TA  - BMC Cancer
+JT  - BMC cancer
+JID - 100967800
+RN  - 0 (Antineoplastic Agents)
+RN  - 0 (Interleukin-6)
+RN  - 0 (STAT3 Transcription Factor)
+RN  - 0I8Y3P32UF (Berberine)
+RN  - Nasopharyngeal carcinoma
+SB  - IM
+MH  - Animals
+MH  - Antineoplastic Agents/pharmacology/toxicity
+MH  - Berberine/*pharmacology/toxicity
+MH  - Cell Line, Tumor
+MH  - Cell Proliferation/drug effects
+MH  - Cell Transformation, Neoplastic/*drug effects/*metabolism
+MH  - Disease Models, Animal
+MH  - Fibroblasts/drug effects/*metabolism
+MH  - Humans
+MH  - Interleukin-6/pharmacology
+MH  - Male
+MH  - Mice
+MH  - Nasopharyngeal Neoplasms/*metabolism/*pathology
+MH  - STAT3 Transcription Factor/antagonists & inhibitors/*metabolism
+MH  - Signal Transduction/drug effects
+MH  - Tumor Burden/drug effects
+MH  - Xenograft Model Antitumor Assays
+PMC - PMC3890551
+OID - NLM: PMC3890551
+EDAT- 2014/01/02 06:00
+MHDA- 2014/06/24 06:00
+CRDT- 2014/01/02 06:00
+PHST- 2013/04/24 [received]
+PHST- 2013/12/09 [accepted]
+PHST- 2013/12/31 [aheadofprint]
+AID - 1471-2407-13-619 [pii]
+AID - 10.1186/1471-2407-13-619 [doi]
+PST - epublish
+SO  - BMC Cancer. 2013 Dec 31;13:619. doi: 10.1186/1471-2407-13-619.

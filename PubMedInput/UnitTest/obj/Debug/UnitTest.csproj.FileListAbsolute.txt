@@ -1,0 +1,16 @@
+D:\项目文档\PubMed\PubMedInput\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
+D:\项目文档\PubMed\PubMedInput\UnitTest\bin\Debug\UnitTest.dll
+D:\项目文档\PubMed\PubMedInput\UnitTest\bin\Debug\UnitTest.pdb
+D:\项目文档\PubMed\PubMedInput\UnitTest\bin\Debug\Library.dll
+D:\项目文档\PubMed\PubMedInput\UnitTest\bin\Debug\NewLife.CommonEntity.dll
+D:\项目文档\PubMed\PubMedInput\UnitTest\bin\Debug\NewLife.Core.dll
+D:\项目文档\PubMed\PubMedInput\UnitTest\bin\Debug\XCode.dll
+D:\项目文档\PubMed\PubMedInput\UnitTest\bin\Debug\Library.pdb
+D:\项目文档\PubMed\PubMedInput\UnitTest\bin\Debug\NewLife.CommonEntity.pdb
+D:\项目文档\PubMed\PubMedInput\UnitTest\bin\Debug\NewLife.CommonEntity.xml
+D:\项目文档\PubMed\PubMedInput\UnitTest\bin\Debug\NewLife.Core.pdb
+D:\项目文档\PubMed\PubMedInput\UnitTest\bin\Debug\NewLife.Core.xml
+D:\项目文档\PubMed\PubMedInput\UnitTest\bin\Debug\XCode.pdb
+D:\项目文档\PubMed\PubMedInput\UnitTest\bin\Debug\XCode.xml
+D:\项目文档\PubMed\PubMedInput\UnitTest\obj\Debug\UnitTest.dll
+D:\项目文档\PubMed\PubMedInput\UnitTest\obj\Debug\UnitTest.pdb
