@@ -1,0 +1,13 @@
+D:\项目文档\PubMed\PubMedInput\Library\bin\Release\Library.dll
+D:\项目文档\PubMed\PubMedInput\Library\bin\Release\Library.pdb
+D:\项目文档\PubMed\PubMedInput\Library\bin\Release\NewLife.CommonEntity.dll
+D:\项目文档\PubMed\PubMedInput\Library\bin\Release\NewLife.Core.dll
+D:\项目文档\PubMed\PubMedInput\Library\bin\Release\XCode.dll
+D:\项目文档\PubMed\PubMedInput\Library\bin\Release\NewLife.CommonEntity.pdb
+D:\项目文档\PubMed\PubMedInput\Library\bin\Release\NewLife.CommonEntity.xml
+D:\项目文档\PubMed\PubMedInput\Library\bin\Release\NewLife.Core.pdb
+D:\项目文档\PubMed\PubMedInput\Library\bin\Release\NewLife.Core.xml
+D:\项目文档\PubMed\PubMedInput\Library\bin\Release\XCode.pdb
+D:\项目文档\PubMed\PubMedInput\Library\bin\Release\XCode.xml
+D:\项目文档\PubMed\PubMedInput\Library\obj\Release\Library.dll
+D:\项目文档\PubMed\PubMedInput\Library\obj\Release\Library.pdb

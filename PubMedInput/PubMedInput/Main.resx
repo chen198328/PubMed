@@ -117,7 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="rbxLog.Text" xml:space="preserve">
+    <value>使用及说明
+1在Sql Server服务器中新建数据库PubMed
+2修改配置文件.config中数据库连接 server=sql server服务器IP或者服务器名
+3输入任务名，系统会提示是否存在人物名前缀的表，如果没有可以点击生成按钮自动生成
+4点击打开按钮，打开待导入的文件
+5点击导入按钮，导入数据
+6可以向已经存在数据的表中导入数据，如果导入失败，会把这次导入的部分数据删除掉，不会影响原表中数据
+7最终导入成功提示的导入数据为从数据库中查询到已经入库的数据记录
+8源代码：https://github.com/chen198328/PubMed</value>
+  </data>
   <metadata name="openFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>158, 17</value>
   </metadata>
 </root>

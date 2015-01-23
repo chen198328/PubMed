@@ -1,0 +1,44 @@
+﻿#Software: vstest.executionengine.x86
+#ProcessID: 3924
+#AppDomain: UnitTestAdapter: Running test
+#FileName: D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\TESTWINDOW\vstest.executionengine.x86.exe
+#BaseDirectory: D:\项目文档\PubMed\PubMedInput\UnitTest\bin\Debug
+#CommandLine: /parentProcessId 3832
+#ApplicationType: Console
+#CLR: 4.0.30319.18408
+#OS: Windows 8 x64, Chen198328/ROY-PC
+#Date: 2015-01-23
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+20:36:24.507 9 N - NewLife.Core v4.6.2014.0928 Build 2014-10-26 16:42:04
+20:36:24.538 9 N - NewLife.XCode v8.13.2014.0720 Build 2014-10-26 16:40:58
+20:36:24.538 9 N - 使用数据库方式：独占，加大缓存权重
+
+#Software: vstest.executionengine.x86
+#ProcessID: 4908
+#AppDomain: UnitTestAdapter: Running test
+#FileName: D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\TESTWINDOW\vstest.executionengine.x86.exe
+#BaseDirectory: D:\项目文档\PubMed\PubMedInput\UnitTest\bin\Debug
+#CommandLine: /parentProcessId 3832
+#ApplicationType: Console
+#CLR: 4.0.30319.18408
+#OS: Windows 8 x64, Chen198328/ROY-PC
+#Date: 2015-01-23
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+20:37:45.392 9 N - NewLife.Core v4.6.2014.0928 Build 2014-10-26 16:42:04
+20:37:45.415 9 N - NewLife.XCode v8.13.2014.0720 Build 2014-10-26 16:40:58
+20:37:45.415 9 N - 使用数据库方式：独占，加大缓存权重
+
+#Software: vstest.executionengine.x86
+#ProcessID: 3644
+#AppDomain: UnitTestAdapter: Running test
+#FileName: D:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\COMMONEXTENSIONS\MICROSOFT\TESTWINDOW\vstest.executionengine.x86.exe
+#BaseDirectory: D:\项目文档\PubMed\PubMedInput\UnitTest\bin\Debug
+#CommandLine: /parentProcessId 3832
+#ApplicationType: Console
+#CLR: 4.0.30319.18408
+#OS: Windows 8 x64, Chen198328/ROY-PC
+#Date: 2015-01-23
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+20:39:46.244 9 N - NewLife.Core v4.6.2014.0928 Build 2014-10-26 16:42:04
+20:39:46.268 9 N - NewLife.XCode v8.13.2014.0720 Build 2014-10-26 16:40:58
+20:39:46.269 9 N - 使用数据库方式：独占，加大缓存权重

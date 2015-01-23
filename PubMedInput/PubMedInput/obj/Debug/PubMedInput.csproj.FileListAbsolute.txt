@@ -8,3 +8,14 @@ D:\项目文档\PubMed\PubMedInput\PubMedInput\obj\Debug\PubMedInput.exe
 D:\项目文档\PubMed\PubMedInput\PubMedInput\obj\Debug\PubMedInput.pdb
 D:\项目文档\PubMed\PubMedInput\PubMedInput\obj\Debug\PubMedInput.Main.resources
 D:\项目文档\PubMed\PubMedInput\PubMedInput\bin\Debug\GenerateTables.sql
+D:\项目文档\PubMed\PubMedInput\PubMedInput\bin\Debug\Library.dll
+D:\项目文档\PubMed\PubMedInput\PubMedInput\bin\Debug\NewLife.CommonEntity.dll
+D:\项目文档\PubMed\PubMedInput\PubMedInput\bin\Debug\NewLife.Core.dll
+D:\项目文档\PubMed\PubMedInput\PubMedInput\bin\Debug\XCode.dll
+D:\项目文档\PubMed\PubMedInput\PubMedInput\bin\Debug\Library.pdb
+D:\项目文档\PubMed\PubMedInput\PubMedInput\bin\Debug\NewLife.CommonEntity.pdb
+D:\项目文档\PubMed\PubMedInput\PubMedInput\bin\Debug\NewLife.CommonEntity.xml
+D:\项目文档\PubMed\PubMedInput\PubMedInput\bin\Debug\NewLife.Core.pdb
+D:\项目文档\PubMed\PubMedInput\PubMedInput\bin\Debug\NewLife.Core.xml
+D:\项目文档\PubMed\PubMedInput\PubMedInput\bin\Debug\XCode.pdb
+D:\项目文档\PubMed\PubMedInput\PubMedInput\bin\Debug\XCode.xml

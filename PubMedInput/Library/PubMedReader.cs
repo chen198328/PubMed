@@ -7,7 +7,7 @@ using XCode;
 using System.IO;
 namespace Library
 {
-  public  class PubMedReader
+    public class PubMedReader
     {
         private Tuple<EntityList<Title>, EntityList<MESH>> Read(string filename)
         {
@@ -28,7 +28,7 @@ namespace Library
                                 titles.Add(title);
                             }
                             title = new Title();
-                            title.Guid = Guid.NewGuid().ToString();
+                            title.Guid = Guid.NewGuid().ToString("N");
                             title.PMID = int.Parse(item.Item2);
                             break;
                         case "TI":
@@ -48,6 +48,18 @@ namespace Library
                             mesh.PMID = title.PMID;
                             mesh.TitleGuid = title.Guid;
                             mesh.MH = item.Item2;
+                            if (!string.IsNullOrEmpty(mesh.MH))
+                            {
+                                int index = mesh.MH.IndexOf("/");
+                                if (index != -1)
+                                {
+                                    mesh.MH = mesh.MH.Substring(0, index);
+                                    if (mesh.MH.Contains("*"))
+                                    {
+                                        mesh.MH = mesh.MH.Replace("*", "");
+                                    }
+                                }
+                            }
                             meshs.Add(mesh);
                             break;
                         default:
@@ -80,9 +92,12 @@ namespace Library
                     }
                     else
                     {
-                        if(string.IsNullOrEmpty(line.Substring(1).Trim())){
-                            writer.Write(" "+line.Trim());
-                        }else{
+                        if (string.IsNullOrEmpty(line.Substring(1).Trim()))
+                        {
+                            writer.Write(" " + line.Trim());
+                        }
+                        else
+                        {
                             writer.WriteLine(line.Trim());
                         }
                     }
