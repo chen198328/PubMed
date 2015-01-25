@@ -15,7 +15,7 @@ namespace Library
     [Description("")]
     [BindIndex("PK_Title", true, "id")]
     [BindIndex("IX_Title_Guid", false, "Guid")]
-    [BindRelation("Guid", false, "MESH", "TitleGuid")]
+    [BindRelation("Guid", false, "Mesh", "TitleGuid")]
     [BindTable("Title", Description = "", ConnName = "PubMed", DbType = DatabaseType.SqlServer)]
     public partial class Title : ITitle
     {
@@ -80,13 +80,13 @@ namespace Library
             set { if (OnPropertyChanging(__.PG, value)) { _PG = value; OnPropertyChanged(__.PG); } }
         }
 
-        private String _Guid;
+        private Guid _Guid;
         /// <summary></summary>
         [DisplayName("Guid")]
         [Description("")]
-        [DataObjectField(false, false, true, 32)]
-        [BindColumn(6, "Guid", "", null, "varchar(32)", 0, 0, false)]
-        public virtual String Guid
+        [DataObjectField(false, false, true, 16)]
+        [BindColumn(6, "Guid", "", null, "uniqueidentifier", 0, 0, false)]
+        public virtual Guid Guid
         {
             get { return _Guid; }
             set { if (OnPropertyChanging(__.Guid, value)) { _Guid = value; OnPropertyChanged(__.Guid); } }
@@ -138,7 +138,7 @@ namespace Library
                     case __.DP : _DP = Convert.ToInt32(value); break;
                     case __.VI : _VI = Convert.ToInt32(value); break;
                     case __.PG : _PG = Convert.ToInt32(value); break;
-                    case __.Guid : _Guid = Convert.ToString(value); break;
+                    case __.Guid : _Guid = (Guid)value; break;
                     case __.PMID : _PMID = Convert.ToInt32(value); break;
                     default: base[name] = value; break;
                 }
@@ -223,7 +223,7 @@ namespace Library
         Int32 PG { get; set; }
 
         /// <summary></summary>
-        String Guid { get; set; }
+        Guid Guid { get; set; }
 
         /// <summary></summary>
         Int32 PMID { get; set; }

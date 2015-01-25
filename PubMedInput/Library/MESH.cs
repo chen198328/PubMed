@@ -13,11 +13,11 @@ namespace Library
     [Serializable]
     [DataObject]
     [Description("")]
-    [BindIndex("PK_MESH", true, "id")]
-    [BindIndex("IX_MESH_TitleGuid", false, "TitleGuid")]
+    [BindIndex("PK_{0}_Mesh", true, "id")]
+    [BindIndex("IX_Mesh_TitleGuid", false, "TitleGuid")]
     [BindRelation("TitleGuid", false, "Title", "Guid")]
-    [BindTable("MESH", Description = "", ConnName = "PubMed", DbType = DatabaseType.SqlServer)]
-    public partial class MESH : IMESH
+    [BindTable("Mesh", Description = "", ConnName = "PubMed", DbType = DatabaseType.SqlServer)]
+    public partial class Mesh : IMesh
     {
         #region 属性
         private Int32 _id;
@@ -32,13 +32,13 @@ namespace Library
             set { if (OnPropertyChanging(__.id, value)) { _id = value; OnPropertyChanged(__.id); } }
         }
 
-        private String _TitleGuid;
+        private Guid _TitleGuid;
         /// <summary></summary>
         [DisplayName("TitleGuid")]
         [Description("")]
-        [DataObjectField(false, false, true, 32)]
-        [BindColumn(2, "TitleGuid", "", null, "varchar(32)", 0, 0, false)]
-        public virtual String TitleGuid
+        [DataObjectField(false, false, true, 16)]
+        [BindColumn(2, "TitleGuid", "", null, "uniqueidentifier", 0, 0, false)]
+        public virtual Guid TitleGuid
         {
             get { return _TitleGuid; }
             set { if (OnPropertyChanging(__.TitleGuid, value)) { _TitleGuid = value; OnPropertyChanged(__.TitleGuid); } }
@@ -60,8 +60,8 @@ namespace Library
         /// <summary></summary>
         [DisplayName("MH")]
         [Description("")]
-        [DataObjectField(false, false, true, 10)]
-        [BindColumn(4, "MH", "", null, "nchar(10)", 0, 0, true)]
+        [DataObjectField(false, false, true, 500)]
+        [BindColumn(4, "MH", "", null, "nvarchar(500)", 0, 0, true)]
         public virtual String MH
         {
             get { return _MH; }
@@ -95,7 +95,7 @@ namespace Library
                 switch (name)
                 {
                     case __.id : _id = Convert.ToInt32(value); break;
-                    case __.TitleGuid : _TitleGuid = Convert.ToString(value); break;
+                    case __.TitleGuid : _TitleGuid = (Guid)value; break;
                     case __.PMID : _PMID = Convert.ToInt32(value); break;
                     case __.MH : _MH = Convert.ToString(value); break;
                     default: base[name] = value; break;
@@ -144,14 +144,14 @@ namespace Library
 
     /// <summary>Mesh接口</summary>
     /// <remarks></remarks>
-    public partial interface IMESH
+    public partial interface IMesh
     {
         #region 属性
         /// <summary></summary>
         Int32 id { get; set; }
 
         /// <summary></summary>
-        String TitleGuid { get; set; }
+        Guid TitleGuid { get; set; }
 
         /// <summary></summary>
         Int32 PMID { get; set; }

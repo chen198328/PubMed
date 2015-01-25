@@ -51,7 +51,7 @@ namespace Library
         //    entity.DP = 0;
         //    entity.VI = 0;
         //    entity.PG = 0;
-        //    entity.Guid = "abc";
+        //    entity.Guid = Guid.NewGuid();
         //    entity.PMID = 0;
         //    entity.Insert();
 
@@ -76,21 +76,16 @@ namespace Library
 
         #region 扩展属性﻿
         [NonSerialized]
-        private MESH _MESH;
+        private Mesh _Mesh;
         /// <summary>该Title所对应的Mesh</summary>
         [XmlIgnore]
-        public MESH MESH
+        public Mesh Mesh
         {
             get
             {
-                if (_MESH == null && !String.IsNullOrEmpty(Guid) && !Dirtys.ContainsKey("MESH"))
-                {
-                    _MESH = MESH.FindAllByTitleGuid(Guid)[0];
-                    Dirtys["MESH"] = true;
-                }
-                return _MESH;
+                return _Mesh;
             }
-            set { _MESH = value; }
+            set { _Mesh = value; }
         }
         #endregion
 
@@ -113,7 +108,7 @@ namespace Library
         /// <param name="guid"></param>
         /// <returns></returns>
         [DataObjectMethod(DataObjectMethodType.Select, false)]
-        public static EntityList<Title> FindAllByGuid(String guid)
+        public static EntityList<Title> FindAllByGuid(Guid guid)
         {
             if (Meta.Count >= 1000)
                 return FindAll(_.Guid, guid);

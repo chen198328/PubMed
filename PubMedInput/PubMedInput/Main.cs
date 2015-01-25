@@ -65,6 +65,10 @@ namespace PubMedInput
             {
                 AddMessage(message);
             };
+            Action<string> changetaskshow = (message) =>
+            {
+                lbl_taskmessageshow.Text = message;
+            };
             string taskname = txtTaskName.Text.Trim();
             if (string.IsNullOrEmpty(taskname))
             {
@@ -83,6 +87,7 @@ namespace PubMedInput
                     if (string.IsNullOrEmpty(error))
                     {
                         this.BeginInvoke(addmessage, string.Format("[成功]创建表{0}_Title,{0}_Mesh", taskname));
+                        this.BeginInvoke(changetaskshow, string.Format("已成功创建：{0}_Title,{0}_Mesh", taskname));
                     }
                     else
                     {
@@ -183,7 +188,7 @@ namespace PubMedInput
 
 
                 Library.PubMedReader reader = new Library.PubMedReader();
-                Tuple<EntityList<Title>, EntityList<MESH>> result = reader.Read(openFileDialog.FileNames.ToList<string>());
+                Tuple<EntityList<Title>, EntityList<Mesh>> result = reader.Read(openFileDialog.FileNames.ToList<string>());
                 bool issuccess = BatchImportData(result.Item1, result.Item2, taskname);
                 watch.Stop();
                 timer.Stop();
@@ -226,7 +231,7 @@ namespace PubMedInput
         {
             lblTimer.Text = "耗时:" + watch.Elapsed.TotalMilliseconds.ToString() + "毫秒";
         }
-        private bool BatchImportData(EntityList<Title> titles, EntityList<MESH> meshs, string taskname)
+        private bool BatchImportData(EntityList<Title> titles, EntityList<Mesh> meshs, string taskname)
         {
             string connectionstring = System.Configuration.ConfigurationManager.ConnectionStrings["PubMed"].ConnectionString;
             using (SqlConnection conn = new SqlConnection(connectionstring))
@@ -268,7 +273,7 @@ namespace PubMedInput
             table.Columns.Add(new DataColumn("VI", typeof(int)));
             table.Columns.Add(new DataColumn("PG", typeof(int)));
             table.Columns.Add(new DataColumn("PMID", typeof(int)));
-            table.Columns.Add(new DataColumn("Guid", typeof(string)));
+            table.Columns.Add(new DataColumn("Guid", typeof(Guid)));
 
             for (int index = 0; index < titles.Count; index++)
             {
@@ -283,10 +288,10 @@ namespace PubMedInput
             }
             return table;
         }
-        private DataTable GetMesh(EntityList<MESH> meshs)
+        private DataTable GetMesh(EntityList<Mesh> meshs)
         {
             DataTable table = new DataTable();
-            table.Columns.Add(new DataColumn("TitleGuid", typeof(string)));
+            table.Columns.Add(new DataColumn("TitleGuid", typeof(Guid)));
             table.Columns.Add(new DataColumn("PMID", typeof(int)));
             table.Columns.Add(new DataColumn("MH", typeof(string)));
 

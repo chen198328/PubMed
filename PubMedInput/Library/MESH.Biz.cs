@@ -13,7 +13,7 @@ namespace Library
 {
     /// <summary>Mesh</summary>
     /// <remarks></remarks>
-    public partial class MESH : Entity<MESH>
+    public partial class Mesh : Entity<Mesh>
     {
         #region 对象操作﻿
 
@@ -44,15 +44,15 @@ namespace Library
         //    if (Meta.Count > 0) return;
 
         //    // 需要注意的是，如果该方法调用了其它实体类的首次数据库操作，目标实体类的数据初始化将会在同一个线程完成
-        //    if (XTrace.Debug) XTrace.WriteLine("开始初始化{0}[{1}]数据……", typeof(MESH).Name, Meta.Table.DataTable.DisplayName);
+        //    if (XTrace.Debug) XTrace.WriteLine("开始初始化{0}[{1}]数据……", typeof(Mesh).Name, Meta.Table.DataTable.DisplayName);
 
-        //    var entity = new MESH();
-        //    entity.TitleGuid = "abc";
+        //    var entity = new Mesh();
+        //    entity.TitleGuid = Guid.NewGuid();
         //    entity.PMID = 0;
         //    entity.MH = "abc";
         //    entity.Insert();
 
-        //    if (XTrace.Debug) XTrace.WriteLine("完成初始化{0}[{1}]数据！", typeof(MESH).Name, Meta.Table.DataTable.DisplayName);
+        //    if (XTrace.Debug) XTrace.WriteLine("完成初始化{0}[{1}]数据！", typeof(Mesh).Name, Meta.Table.DataTable.DisplayName);
         //}
 
 
@@ -80,11 +80,6 @@ namespace Library
         {
             get
             {
-                if (_Title == null && !String.IsNullOrEmpty(TitleGuid) && !Dirtys.ContainsKey("Title"))
-                {
-                    _Title = Title.FindAllByGuid(TitleGuid)[0];
-                    Dirtys["Title"] = true;
-                }
                 return _Title;
             }
             set { _Title = value; }
@@ -96,7 +91,7 @@ namespace Library
         /// <param name="__id"></param>
         /// <returns></returns>
         [DataObjectMethod(DataObjectMethodType.Select, false)]
-        public static MESH FindByid(Int32 __id)
+        public static Mesh FindByid(Int32 __id)
         {
             if (Meta.Count >= 1000)
                 return Find(_.id, __id);
@@ -110,7 +105,7 @@ namespace Library
         /// <param name="titleguid"></param>
         /// <returns></returns>
         [DataObjectMethod(DataObjectMethodType.Select, false)]
-        public static EntityList<MESH> FindAllByTitleGuid(String titleguid)
+        public static EntityList<Mesh> FindAllByTitleGuid(Guid titleguid)
         {
             if (Meta.Count >= 1000)
                 return FindAll(_.TitleGuid, titleguid);
@@ -131,7 +126,7 @@ namespace Library
         ///// <param name="maximumRows">最大返回行数，0表示所有行</param>
         ///// <returns>实体集</returns>
         //[DataObjectMethod(DataObjectMethodType.Select, true)]
-        //public static EntityList<MESH> Search(String key, String orderClause, Int32 startRowIndex, Int32 maximumRows)
+        //public static EntityList<Mesh> Search(String key, String orderClause, Int32 startRowIndex, Int32 maximumRows)
         //{
         //    return FindAll(SearchWhere(key), orderClause, null, startRowIndex, maximumRows);
         //}

@@ -9,14 +9,14 @@ namespace Library
 {
     public class PubMedReader
     {
-        private Tuple<EntityList<Title>, EntityList<MESH>> Read(string filename)
+        private Tuple<EntityList<Title>, EntityList<Mesh>> Read(string filename)
         {
             using (StreamReader reader = new StreamReader(filename, Encoding.Default))
             {
                 string line = string.Empty;
                 Title title = null;
                 EntityList<Title> titles = new EntityList<Title>();
-                EntityList<MESH> meshs = new EntityList<MESH>();
+                EntityList<Mesh> Meshs = new EntityList<Mesh>();
                 while ((line = reader.ReadLine()) != null)
                 {
                     Tuple<string, string> item = SplitLine(line);
@@ -28,7 +28,7 @@ namespace Library
                                 titles.Add(title);
                             }
                             title = new Title();
-                            title.Guid = Guid.NewGuid().ToString("N");
+                            title.Guid = Guid.NewGuid();
                             title.PMID = int.Parse(item.Item2);
                             break;
                         case "TI":
@@ -44,30 +44,30 @@ namespace Library
                             title.PG = int.Parse(item.Item2);
                             break;
                         case "MH":
-                            MESH mesh = new MESH();
-                            mesh.PMID = title.PMID;
-                            mesh.TitleGuid = title.Guid;
-                            mesh.MH = item.Item2;
-                            if (!string.IsNullOrEmpty(mesh.MH))
+                            Mesh Mesh = new Mesh();
+                            Mesh.PMID = title.PMID;
+                            Mesh.TitleGuid = title.Guid;
+                            Mesh.MH = item.Item2;
+                            if (!string.IsNullOrEmpty(Mesh.MH))
                             {
-                                int index = mesh.MH.IndexOf("/");
+                                int index = Mesh.MH.IndexOf("/");
                                 if (index != -1)
                                 {
-                                    mesh.MH = mesh.MH.Substring(0, index);
-                                    if (mesh.MH.Contains("*"))
+                                    Mesh.MH = Mesh.MH.Substring(0, index);
+                                    if (Mesh.MH.Contains("*"))
                                     {
-                                        mesh.MH = mesh.MH.Replace("*", "");
+                                        Mesh.MH = Mesh.MH.Replace("*", "");
                                     }
                                 }
                             }
-                            meshs.Add(mesh);
+                            Meshs.Add(Mesh);
                             break;
                         default:
                             break;
                     }
                 }
                 titles.Add(title);
-                return new Tuple<EntityList<Title>, EntityList<MESH>>(titles, meshs);
+                return new Tuple<EntityList<Title>, EntityList<Mesh>>(titles, Meshs);
             }
         }
 
@@ -119,23 +119,23 @@ namespace Library
             }
         }
 
-        public Tuple<EntityList<Title>, EntityList<MESH>> Read(List<string> filenames)
+        public Tuple<EntityList<Title>, EntityList<Mesh>> Read(List<string> filenames)
         {
             if (filenames == null)
             {
                 throw new Exception("filenames is null");
             }
             EntityList<Title> titles = new EntityList<Title>();
-            EntityList<MESH> meshs = new EntityList<MESH>();
+            EntityList<Mesh> Meshs = new EntityList<Mesh>();
             for (int index = 0; index < filenames.Count; index++)
             {
                 string filename = ConvertFomart(filenames[index]);
-                Tuple<EntityList<Title>, EntityList<MESH>> result = Read(filename);
+                Tuple<EntityList<Title>, EntityList<Mesh>> result = Read(filename);
                 titles.AddRange(result.Item1);
-                meshs.AddRange(result.Item2);
+                Meshs.AddRange(result.Item2);
                 File.Delete(filename);
             }
-            return new Tuple<EntityList<Title>, EntityList<MESH>>(titles, meshs);
+            return new Tuple<EntityList<Title>, EntityList<Mesh>>(titles, Meshs);
         }
     }
 }
